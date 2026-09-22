@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+@layer utilities {
+  .font-fantasy {
+    font-family: 'Cinzel', serif;
+  }
+  .font-wizard {
+    font-family: 'MedievalSharp', cursive;
+  }
+  .font-sans {
+    font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+  }
+}
+
+/* Fantasy RPG Glass & Stone Panels inspired by Wizard101 & fantasy games */
+.fantasy-stone-panel {
+  background: radial-gradient(130% 130% at 50% 0%, rgba(30, 41, 59, 0.95) 0%, rgba(15, 23, 42, 0.98) 100%);
+  border: 2px solid #b4975a;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.8), inset 0 0 10px rgba(180, 151, 90, 0.2);
+}
+
+.fantasy-gold-border {
+  border-image: linear-gradient(to bottom, #fce096, #b48a3c, #78531e) 1;
+}
+
+.fantasy-gold-glow {
+  text-shadow: 0 0 12px rgba(234, 179, 8, 0.6), 0 0 24px rgba(202, 138, 4, 0.3);
+}
+
+.fantasy-wood-panel {
+  background: linear-gradient(180deg, #382416 0%, #24140a 100%);
+  border: 2px solid #8b5a2b;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 6px 16px rgba(0, 0, 0, 0.6);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0f172a;
+}
+::-webkit-scrollbar-thumb {
+  background: #b4975a;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #eab308;
+}
